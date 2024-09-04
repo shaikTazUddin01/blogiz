@@ -1,9 +1,10 @@
+import { TBlogs } from "@/app/Types";
 import Image from "next/image";
 import Link from "next/link";
 import { AiFillLike } from "react-icons/ai";
 import { FaCalendar } from "react-icons/fa";
 
-const BlogCard = ({ blog }) => {
+const BlogCard = ({ blog }:{blog:TBlogs}) => {
   return (
     <div className="card w-full bg-base-100 shadow-xl">
       <figure>

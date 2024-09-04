@@ -5,7 +5,7 @@ const LatestBlogs = ({blogs}:{blogs:TBlogs[]}) => {
     console.log(blogs);
   return (
     <div className="py-5 mt-5 px-5">
-      <h1 className="text-4xl text-center ">Latest Blogs</h1>
+      <h1 className="text-4xl text-center ">Latest Blogs From <span className="text-accent">Blogiz</span></h1>
       <p className="text-gray-400 mt-3 w-[40%] text-center mx-auto">
         <i>
           Dive into the fascinating world of quantum computing, where unlocking
