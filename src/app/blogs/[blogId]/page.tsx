@@ -8,6 +8,8 @@ interface TBlogsId{
 }
 
 export const generateStaticParams=async()=>{
+
+    
     const res=await fetch('http://localhost:5000/blogs/')
     const blogs=await res.json()
 

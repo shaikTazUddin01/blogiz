@@ -1,14 +1,16 @@
+"use client"
 import BlogCard from "@/components/ui/BlogCard";
 import React from "react";
 import { TBlogs } from "../Types";
+import { useGetBlogDataQuery } from "@/redux/feature/baseApi";
 
-const Blogs = async () => {
-  const res = await fetch("http://localhost:5000/blogs", {
-    cache: "no-store",
-  });
-  const blogs = await res.json();
+const Blogs =  () => {
+  
 
-  console.log(blogs);
+const {data:blogs}=useGetBlogDataQuery("")
+
+  
+
   return (
     <div>
       <h1 className="text-4xl text-center my-5">
